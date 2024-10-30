@@ -1,0 +1,26 @@
+{
+  "name": "web-test-recorder",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test:record": "testcafe chrome tests/recording.js --video artifacts/recordings",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "testcafe": "^3.5.0",
+    "testcafe-reporter-html": "^1.4.6",
+    "testcafe-browser-provider-selenium": "^1.0.0",
+    "vite": "^5.0.8"
+  }
+}
